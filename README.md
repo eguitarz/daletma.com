@@ -1,5 +1,5 @@
 # daletma.com
-Another Personal Website
+Another Personal Website about Dale Ma
 
 # SPEC
 1. It should contain
