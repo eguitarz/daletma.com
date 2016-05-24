@@ -1,2 +1,8 @@
-{{site-menu class="site-menu"}}
-{{outlet}}
+{{#app-container class="app-container"}}
+  {{site-menu class="site-menu"}}
+  {{outlet}}
+  {{#widget-pane class="widget-pane"}}
+    <div class="widget-pane__widget">2016-5-23 11:00:00</div>
+    <div class="widget-pane__widget">Location: San Francsico</div>
+  {{/widget-pane}}
+{{/app-container}}
