@@ -6,7 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('story');
+  this.route('index');
+  this.route('index', { path: '/:slug'});
 });
 
 export default Router;
