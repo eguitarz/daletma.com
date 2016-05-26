@@ -1,4 +1,7 @@
 .site-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
   padding: 120px 40px;
   width: 280px;
   height: calc(100% - 240px);
@@ -14,10 +17,17 @@
 }
 
 .site-menu__item {
+  display: block;
+  width: 120px;
   margin-bottom: 1em;
   transition: transform 1000ms;
+  animation-timing-function: ease-out;
   transition-delay: 500ms;
   transform: rotateY(0deg);
+
+  &.active {
+    color: #fff;
+  }
 
   &:hover {
     color: #fff;

@@ -6,8 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('index', { path: '/' } );
-  this.route('index', { path: '/:slug' } );
+  this.route('story');
+  this.route('design');
+  this.route('resume');
 });
 
 export default Router;

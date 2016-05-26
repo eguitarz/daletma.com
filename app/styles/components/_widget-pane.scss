@@ -1,4 +1,7 @@
 .widget-pane {
+  position: fixed;
+  right: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -17,6 +20,7 @@
   width: 100%;
   transition: transform 1000ms;
   transition-delay: 1000ms;
+  animation-timing-function: ease-out;
   margin: 1em;
   transform: rotateY(0deg) translateX(-1em);
 }
