@@ -6,7 +6,7 @@
   width: 280px;
   height: calc(100% - 240px);
   font-size: 1.6em;
-  perspective: 280px;
+  perspective: 140px;
   opacity: 0;
 
   transition: all 1000ms;
@@ -27,6 +27,7 @@
 
   &.active {
     color: #fff;
+    text-shadow: 0 0 4px #fff;
   }
 
   &:hover {
