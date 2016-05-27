@@ -12,7 +12,7 @@
   transition: all 1000ms;
 }
 
-.--loaded .widget-pane {
+.--loaded .widget-pane, .--loaded #location-map {
   opacity: 1;
 }
 
@@ -27,4 +27,19 @@
 
 .--loaded .widget-pane__widget {
   transform: rotateY(-2deg) translateX(-1em);
+}
+
+#location-map {
+  width: 80%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  transition: transform 1000ms;
+  transition-delay: 1000ms;
+  transform: rotateY(0deg) translateX(0);
+  border: 2px solid $color-anakiwa-blue;
+}
+
+.--loaded #location-map {
+  transform: rotateY(-2deg) translateX(0);
 }
