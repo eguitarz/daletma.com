@@ -3,13 +3,13 @@ import Ember from 'ember';
 export default Ember.Mixin.create({
   actions: {
     didTransition() {
-      Ember.run.later(() => this.controller.set('transitioned', true), 100);
+      Ember.run.later(() => this.controllerFor('application').set('transitioned', true), 100);
     },
 
     willTransition(transition) {
-      if (this.controller.get('transitioned')) {
+      if (this.controllerFor('application').get('transitioned')) {
         transition.abort();
-        this.controller.set('transitioned', false);
+        this.controllerFor('application').set('transitioned', false);
       }
       Ember.run.later(() => transition.retry(), 300);
     }

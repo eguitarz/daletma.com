@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
+const { computed } = Ember;
+
 export default Ember.Component.extend({
-  classNameBindings: ['--loaded'],
+  classNameBindings: ['--loaded', '--transitioned'],
+  '--transitioned': computed.alias('transitioned'),
 
   init() {
     this._super(...arguments);
