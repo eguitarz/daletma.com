@@ -1,9 +1,9 @@
 {{#app-container class="app-container" transitioned=transitioned}}
   {{site-menu class="site-menu"}}
   {{outlet}}
-  {{#widget-pane class="widget-pane"}}
+  <div class="widget-pane">
     <div class="widget-pane__widget">2016-5-23 11:00:00</div>
     <div class="widget-pane__widget">Location: San Francsico</div>
     {{outlet "widget"}}
-  {{/widget-pane}}
+  </div>
 {{/app-container}}
