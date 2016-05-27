@@ -1,4 +1,14 @@
 .design-page {
   width: 100%;
-  height: 100%;
+  margin: 40px 320px 40px 280px;
+  padding: 1em;
+  border: 1px solid $color-anakiwa-blue;
+  box-shadow: 0 0 1px 1px $color-anakiwa-blue;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 500ms;
+}
+
+.--transitioned.design-page {
+  opacity: 1;
 }

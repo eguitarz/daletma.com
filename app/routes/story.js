@@ -1,17 +1,4 @@
 import Ember from 'ember';
+import Delayable from '../mixins/delayable';
 
-export default Ember.Route.extend({
-  actions: {
-    didTransition() {
-      Ember.run.later(() => this.controller.set('transitioned', true), 100);
-    },
-
-    willTransition(transition) {
-      if (this.controller.get('transitioned')) {
-        transition.abort();
-        this.controller.set('transitioned', false);
-      }
-      Ember.run.later(() => transition.retry(), 800);
-    }
-  }
-});
+export default Ember.Route.extend(Delayable, {});

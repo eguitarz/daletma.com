@@ -1,12 +1,12 @@
 .story-page {
   width: 100%;
-  margin: 40px 320px 0 280px;
+  margin: 40px 320px 40px 280px;
   padding: 1em;
   border: 1px solid $color-anakiwa-blue;
   box-shadow: 0 0 1px 1px $color-anakiwa-blue;
   border-radius: 3px;
   opacity: 0;
-  transition: all 1000ms;
+  transition: all 500ms;
 }
 
 .--transitioned.story-page {
